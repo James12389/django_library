@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Local Library Staff Portal</title>{% endblock %}
+
+{% block content %}
+<h2>Book</h2>
+<li><a href="{% url 'all-borrowed' %}">Books on Loan</a></li>
+<li><a href="{% url 'book-create' %}">Add a book</a></li>
+<p></p>
+<h2>Author</h2>
+<li><a href="{% url 'author-create' %}">Add an author</a></li>
+{% endblock %}
